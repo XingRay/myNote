@@ -1,25 +1,29 @@
 ## 学习计划
 
-1. kotlin
+- kotlin
 
-2. 音视频 ffmpeg
+- gradle
 
-3. openGL
+- C/C++
 
-4. gradle
+- 音视频 ffmpeg
 
-5. javaWeb
+- openGL
 
-6. javaFx
+- openCV
 
-7. Flutter/Dart
+- java/jvm/concurrent
 
-8. C/C++
+- android framework
 
-9. tcpip/http(s)
+- android jvm art
 
-10. db/sql
+- Flutter/Dart
 
-11. java/jvm/concurrent
+- tcpip/http(s)
 
-12. android
+- db/sql
+
+- javaWeb/javaEE
+
+- javaFx
