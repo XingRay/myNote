@@ -62,6 +62,16 @@ adts_variable_header();
 |original_copy|1|bslbf|set to 0 when encoding, ignore when decoding|
 |home|1|bslbf|set to 0 when encoding, ignore when decoding|
 
+adts_variable_header table
+
+|adts_variable_header|位数|类型|说明|
+|:-|:-|:-|:-|
+|copyright_identification_bit|1|bslbf|set to 0 when encoding, ignore when decoding|
+|copyright_identification_start|1|bslbf|set to 0 when encoding, ignore when decoding|
+|frame_length|13|bslbf|一个ADTS帧的长度包括ADTS头和AAC原始流,frame length, this value must include 7 or 9 bytes of header length:aac_frame_length =(protection_absent == 1 ? 7 : 9) + size(AACFrame)protection_absent=0时, header length=9bytesprotection_absent=1时, header length=7bytes|
+|adts_buffer_fullness|11|bslbf|0x7FF 说明是码率可变的码流|
+|number_of_raw_data_blocks_in_frame|2|nimsfb|表示ADTS帧中有number_of_raw_data_blocks_in_frame + 1个AAC原始帧, 所以说number_of_raw_data_blocks_in_frame == 0 表示说ADTS帧中有一个AAC数据块|
+
 在MPEG-2 AAC中定义了3种profile：
 
 |index|profile|
