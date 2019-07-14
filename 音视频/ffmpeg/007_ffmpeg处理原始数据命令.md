@@ -31,7 +31,7 @@ ffmpeg -i input.mp4 -vn -ar 44100 -ac 2 f s16le out.pcm
 -i 输入文件
 -vn 不使用视频编码器，输出文件中没有视频部分
 -ar audio rate 音频的采样率 这里使用44.1k，其他常用的还有48k，32k，16k
--ac audio channel 声道，有单声道、双声道还是立体声，ac2表示双声道
+-ac audio channel 声道，有单声道、双声道还是立体声，ac2表示双声道-c:a
 -f 抽取出的数据的格式，
     s16le 
     s：signed有符号的， 
